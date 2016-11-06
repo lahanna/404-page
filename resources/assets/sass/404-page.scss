@@ -96,12 +96,11 @@ body {
         }
 
     }
-
 }
-
 
 .preamble{
     margin-top: 50px;
+
     @media (max-width: $pageWidth) {
         width: 100%;
         margin-top: 10px;
@@ -128,6 +127,7 @@ body {
         float: left;
         shape-outside: circle() margin-box;
         margin: 36px;
+
         @media (max-width: $pageWidth) {
             width: 250px;
             height: 250px;
@@ -141,6 +141,7 @@ body {
             font-size: 90px;
             line-height: 12px;
             letter-spacing: 4px;
+
             @media (max-width: $pageWidth) {
                 padding-top: 100px;
                 margin-top:20px;
@@ -171,6 +172,7 @@ body {
     font-size: $baseFontSize;
     line-height: 22px;
     font-family: 'Open Sans', sans-serif;
+
     @media (max-width: $pageWidth) {
         font-size: $baseFontSizeMobile;
     }
@@ -178,6 +180,7 @@ body {
 
 .footer-decor{
     padding-top: 40px;
+
     @media (max-width: $pageWidth) {
         text-align: center;
         padding-top: 20px;
@@ -188,11 +191,10 @@ body {
     width: $pageWidth;
     margin: 0 auto;
     text-align: center;
+
     @media (max-width: $pageWidth) {
         width: 90%;
     }
-
-
 }
 
 .copyright {
@@ -204,12 +206,12 @@ body {
     padding-bottom: 80px;
     text-transform: uppercase;
     letter-spacing: 2px;
+
     @media (max-width: $pageWidth) {
         padding-top: 20px;
         padding-bottom: 20px;
         font-size: $copyFontSizeMobile;
     }
-
 }
 
 p.copyright a {
@@ -227,6 +229,7 @@ p.copyright a:hover {
 .button-list {
     margin-top: 40px;
     text-decoration: none;
+
     @media (max-width: $pageWidth) {
         margin-top: 30px;
     }
@@ -244,6 +247,7 @@ ul.button-list  {
     padding-right: 20px;
     font-size: $baseFontSize;
     font-family: 'Open Sans', sans-serif;
+
     @media (max-width: $pageWidth) {
         padding-right: 10px;
     }
@@ -260,6 +264,7 @@ ul.button-list  {
     padding: 1rem 1.5rem;
     position: relative;
     z-index: 100;
+
     @media (max-width: $pageWidth) {
         padding: 0.8rem 1.2rem;
         font-size: $baseFontSizeMobile;
