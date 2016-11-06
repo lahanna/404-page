@@ -201,10 +201,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: lighten($textBlack, 50%);
     padding-top: 80px;
+    padding-bottom: 80px;
     text-transform: uppercase;
     letter-spacing: 2px;
     @media (max-width: $pageWidth) {
         padding-top: 20px;
+        padding-bottom: 20px;
         font-size: $copyFontSizeMobile;
     }
 
@@ -230,7 +232,11 @@ p.copyright a:hover {
     }
 }
 
-.button-list li{
+ul.button-list  {
+    padding-left: 0;
+}
+
+.button-list li {
     display: inline-block;
     list-style: none;
     font-size: 13px;
@@ -238,6 +244,9 @@ p.copyright a:hover {
     padding-right: 20px;
     font-size: $baseFontSize;
     font-family: 'Open Sans', sans-serif;
+    @media (max-width: $pageWidth) {
+        padding-right: 10px;
+    }
 }
 
 //Button gradient css inspired by: https://medium.com/@dave_lunny/animating-css-gradients-using-only-css-d2fd7671e759#.k4865y9et
@@ -252,7 +261,7 @@ p.copyright a:hover {
     position: relative;
     z-index: 100;
     @media (max-width: $pageWidth) {
-        padding: 0.6rem 1.2rem;
+        padding: 0.8rem 1.2rem;
         font-size: $baseFontSizeMobile;
     }
 
