@@ -1,0 +1,277 @@
+body {
+    color: $textBlack;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f0f0;
+
+    &.cold-palette {
+        p::selection, h1::selection, h2::selection, a::selection {
+            background-color: $lavenderPurple;
+        }
+
+        .circle {
+            background: $gradientCold;
+        }
+
+        .circle-header{
+            text-shadow: 5px 5px lighten($sharpPink, 10%);
+        }
+        .btn-pink {
+            color: lighten($sharpPink, 10%);
+            border: 1px solid lighten($sharpPink, 20%);
+            &:hover {
+                color: $textWhite;
+                border: 1px solid transparent;
+                &:before {
+                    background: $gradientCold;
+
+                }
+            }
+        }
+        .info-header {
+            color: $sharpPink;
+        }
+        .info-text {
+            color: $softPink;
+        }
+        .footer-decor{
+            border-bottom: 1px solid lighten($sharpPink, 20%);
+        }
+
+        .copyright{
+            color: lighten($softPink, 5%);
+
+        }
+        p.copyright a {
+            color: lighten($softPink, 5%);
+        }
+
+        p.copyright a:hover {
+            color: lighten($softPink, 10%);
+        }
+
+    }
+    &.warm-palette {
+        p::selection, h1::selection, h2::selection, a::selection {
+            background-color: $pastelPink;
+        }
+        .circle {
+            background: $gradientWarm;
+        }
+        .circle-header{
+            text-shadow: 5px 5px $sunsetPink;
+        }
+        .btn-pink {
+            color: $warmPink;
+            border: 1px solid lighten($warmPink, 10%);
+            &:hover {
+                color: $textWhite;
+                border: 1px solid transparent;
+                &:before {
+                    background: $gradientWarm;
+
+                }
+            }
+        }
+
+        .info-header {
+            color: $peachPink;
+        }
+        .info-text {
+            color: lighten($warmPink, 5%);
+        }
+        .footer-decor{
+            border-bottom: 1px solid lighten($warmPink, 10%);
+        }
+
+        .copyright{
+            color: lighten($warmPink, 5%);
+
+        }
+        p.copyright a {
+            color: lighten($warmPink, 5%);
+        }
+
+        p.copyright a:hover {
+            color: lighten($warmPink, 10%);
+        }
+
+    }
+
+}
+
+
+.preamble{
+    margin-top: 50px;
+    @media (max-width: $pageWidth) {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.content {
+    padding-top: 120px;
+    width: $pageWidth;
+    margin: 0 auto;
+
+    @media (max-width: $pageWidth) {
+        width: 90%;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .circle{
+        width: 304px;
+        height: 304px;
+        text-align: center;
+        color: $textWhite;
+        border-radius: 50%;
+        float: left;
+        shape-outside: circle() margin-box;
+        margin: 36px;
+        @media (max-width: $pageWidth) {
+            width: 250px;
+            height: 250px;
+            float: none;
+            margin: auto;
+        }
+        .circle-header {
+            font-family: 'Roboto Slab', serif;
+            color: $textWhite;
+            margin-top: 120px;
+            font-size: 90px;
+            line-height: 12px;
+            letter-spacing: 4px;
+            @media (max-width: $pageWidth) {
+                padding-top: 100px;
+                margin-top:20px;
+                font-size: 82px;
+                line-height: 10px;
+            }
+        }
+        .circle-text {
+            line-height: 0;
+            font-size: 14px;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+.info-header{
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+
+    @media (max-width: $pageWidth) {
+        clear: both;
+        font-size: 34px;
+    }
+}
+
+.info-text{
+    font-size: $baseFontSize;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    @media (max-width: $pageWidth) {
+        font-size: $baseFontSizeMobile;
+    }
+}
+
+.footer-decor{
+    padding-top: 40px;
+    @media (max-width: $pageWidth) {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+.footer{
+    width: $pageWidth;
+    margin: 0 auto;
+    text-align: center;
+    @media (max-width: $pageWidth) {
+        width: 90%;
+    }
+
+
+}
+
+.copyright {
+    font-size: $copyFontSize;
+    word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    color: lighten($textBlack, 50%);
+    padding-top: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    @media (max-width: $pageWidth) {
+        padding-top: 20px;
+        font-size: $copyFontSizeMobile;
+    }
+
+}
+
+p.copyright a {
+    text-decoration: none;
+    cursor: pointer;
+    color: lighten($textBlack, 50%);
+}
+
+p.copyright a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: lighten($textBlack, 40%);
+}
+
+.button-list {
+    margin-top: 40px;
+    text-decoration: none;
+    @media (max-width: $pageWidth) {
+        margin-top: 30px;
+    }
+}
+
+.button-list li{
+    display: inline-block;
+    list-style: none;
+    font-size: 13px;
+    font-size: 1.3em;
+    padding-right: 20px;
+    font-size: $baseFontSize;
+    font-family: 'Open Sans', sans-serif;
+}
+
+//Button gradient css inspired by: https://medium.com/@dave_lunny/animating-css-gradients-using-only-css-d2fd7671e759#.k4865y9et
+
+.btn-pink{
+    background-size: 100%;
+    text-decoration: none;
+    border-radius: 1.60rem;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 100;
+    @media (max-width: $pageWidth) {
+        padding: 0.6rem 1.2rem;
+        font-size: $baseFontSizeMobile;
+    }
+
+    &:before {
+        border-radius: inherit;
+        transition: opacity 0.40s ease-out;
+        content:'';
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -100;
+    }
+
+    &:hover {
+        &:before{
+            opacity:1;
+        }
+    }
+}
