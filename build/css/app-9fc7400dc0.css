@@ -555,11 +555,13 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #b3b3b3;
   padding-top: 80px;
+  padding-bottom: 80px;
   text-transform: uppercase;
   letter-spacing: 2px; }
   @media (max-width: 720px) {
     .copyright {
       padding-top: 20px;
+      padding-bottom: 20px;
       font-size: 9px; } }
 
 p.copyright a {
@@ -579,6 +581,9 @@ p.copyright a:hover {
     .button-list {
       margin-top: 30px; } }
 
+ul.button-list {
+  padding-left: 0; }
+
 .button-list li {
   display: inline-block;
   list-style: none;
@@ -587,6 +592,9 @@ p.copyright a:hover {
   padding-right: 20px;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif; }
+  @media (max-width: 720px) {
+    .button-list li {
+      padding-right: 10px; } }
 
 .btn-pink {
   background-size: 100%;
@@ -599,7 +607,7 @@ p.copyright a:hover {
   z-index: 100; }
   @media (max-width: 720px) {
     .btn-pink {
-      padding: 0.6rem 1.2rem;
+      padding: 0.8rem 1.2rem;
       font-size: 12px; } }
   .btn-pink:before {
     border-radius: inherit;
