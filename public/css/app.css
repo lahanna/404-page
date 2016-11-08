@@ -405,7 +405,7 @@ template {
 body {
   color: #333;
   font-family: 'Roboto', sans-serif;
-  background-color: #f2f0f0; }
+  background-color: #f5f5f5; }
   body.cold-palette p::-moz-selection, body.cold-palette h1::-moz-selection, body.cold-palette h2::-moz-selection, body.cold-palette a::-moz-selection {
     background-color: #eeeeff; }
   body.cold-palette p::selection, body.cold-palette h1::selection, body.cold-palette h2::selection, body.cold-palette a::selection {

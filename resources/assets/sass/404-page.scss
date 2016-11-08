@@ -1,7 +1,7 @@
 body {
     color: $textBlack;
     font-family: 'Roboto', sans-serif;
-    background-color: #f2f0f0;
+    background-color: #f5f5f5;
 
     &.cold-palette {
         p::selection, h1::selection, h2::selection, a::selection {
